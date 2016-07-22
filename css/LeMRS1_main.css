@@ -1,0 +1,197 @@
+/*********************************************
+			LeMRS1_main.css
+				LeMRS1 project css
+				 copyright 2016 Eric Welch
+				 
+				 GNU GENERAL PUBLIC LICENSE
+														 Version 2, June 1991
+
+			 Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+*********************************************/
+
+
+
+/*********************************************
+	General
+*********************************************/
+* {
+box-sizing: border-box;
+}
+
+.main-wrapper {
+	max-width: 1712px;
+	margin: 0 auto;
+	padding:  2%;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/*********************************************
+	Heading
+*********************************************/
+
+header {
+	
+	width: 100%;
+	border: solid 2px black;
+}
+
+header h1,
+h3 {
+	text-align: center;
+}
+
+.logo {
+	width: 5em;
+	margin: 0 35%;
+}
+
+
+/*********************************************
+	Navigation
+*********************************************/
+
+Nav {
+	background-color: purple;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	padding: .5em .5em .5em 0;
+}
+
+nav li a {
+	color: #ccc;
+}
+
+/*********************************************
+	Footer
+*********************************************/
+
+footer {
+	text-align: center;
+	clear: both;
+	color: #ccc;
+	width: 100%;
+	background-color: green;
+}
+
+/*********************************************
+	Content
+*********************************************/
+
+.left {
+	background-color: red;
+	
+}
+
+.main {
+	background-color: #ccc;
+
+}
+
+.right {
+	background-color: blue;
+	
+}
+
+/*********************************************
+	media queries
+*********************************************/
+
+/** two columns: left and main  **/
+
+@media screen and (min-width: 480px) {
+	
+	.logo {
+		margin: .5em;
+		float: left;
+		clear: right;
+	}
+	
+	.left {
+		width: 40%;
+		float: left;
+	}
+	
+/***************left width***********************
+
+0.5 gutter + 4 col. + 3 gutters + 0.5 gutter = 192px
+		8 + (4*32) + (3*16) + 8 = 192px
+		
+192/480 = 40%
+
+*****************************************/
+
+	.main {
+		width: 60%;
+		float: right;
+	}
+	
+	nav li {
+	display: inline-block;
+	}
+	
+} /**480px**/
+
+/** three columns: left, main, right. **/
+
+	/**600px**/
+	
+@media screen and (min-width: 600px) {
+	
+	.logo {
+		width: 7em;
+		
+	}
+	
+}
+
+@media screen and (min-width: 900px) {
+	
+	.left {
+		width: 19%;
+		
+	}
+	
+	.main {
+		width: 58%;
+		float: left;
+		margin: 0 0 0 2%;
+		
+	}
+	
+	.right {
+		width: 19%;
+		float: right;
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
