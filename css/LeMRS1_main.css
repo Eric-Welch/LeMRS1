@@ -84,6 +84,11 @@ nav li a {
 
 .nav_social {
 	float: right;
+	margin-right: 1%;
+}
+
+.nav_social a {
+	padding-left: .5em;
 }
 
 /*********************************************
@@ -96,6 +101,7 @@ footer {
 	color: #ccc;
 	width: 100%;
 	background-color: green;
+	padding: .5em;
 }
 
 /*********************************************
