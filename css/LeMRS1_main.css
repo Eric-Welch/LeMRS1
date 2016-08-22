@@ -37,6 +37,8 @@ img {
 	display: table;
 	clear: both;
 }
+
+
 /*********************************************
 	Heading
 *********************************************/
@@ -68,15 +70,20 @@ Nav {
 
 nav ul {
 	list-style: none;
+	float: left;
 }
 
 nav li {
 	display: inline-block;
-	padding: .5em .5em .5em 0;
+	padding: 0 .5em 0 0;
 }
 
 nav li a {
 	color: #ccc;
+}
+
+.nav_social {
+	float: right;
 }
 
 /*********************************************
